@@ -38,6 +38,7 @@ nav >a{
   color: blue;
 }
 
+
 header{
   background-color: blue;
   height: 550px;
@@ -75,6 +76,7 @@ color: white;
   position: relative;
   top: 100px;
 }
+
 .header-text>p{
   position: relative;
   top: 100px;
@@ -156,9 +158,6 @@ div.cards{
   justify-content: space-between;
   align-items: center;
   position: relative;
-  /* left:40px;
-  right:40px;
-  top: 110px; */
   padding-left: 40px;
   padding-right: 40px;
   height: 355px;
@@ -290,7 +289,7 @@ font-weight: 700;
   font-weight: 200;
   }
 
-.footer-section{
+div.footer-section{
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -345,4 +344,125 @@ ul.logos-list>li{
 }
 .footer-left>ul>li{
   color: #FFFFFF;
+}
+
+ /* Mobile responsiveness */
+@media (max-width:720px) {
+  .nav-item-active{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+  }
+  .header-image{
+    display: none;
+  }
+
+  .header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+
+  .header-text>h2{
+    width: 50vh;
+  }
+
+  .header-text>img{
+    display: none;
+  }
+
+  div.companies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .companies>a{
+    padding: 10px;
+   
+  }
+
+.section-api{
+  width: 100vw;
+  height: 1500px;
+  background-color: #FAF9F6;
+}
+  .cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+  
+}
+
+.blog-section{
+  width: 100vw;
+  height: 900px;
+  background-color: #FAF9F6;
+}
+
+.blog-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  top:180px;
+  left: 10px;
+}
+
+.blog-card{
+  width: 100vw;
+}
+.blog-content{
+  
+  background-color: #FFFFFF;
+  width: 200px;
+  height: 150px;
+  font-weight: 100;
+}
+.blog-card-bottom-image ,.blog-author{
+  display: none;
+}
+
+.faq-image{
+  display: none;
+}
+
+div.download-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.download-email>form{
+display: flex;  
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-left: 180px;
+margin-top: 20px;
+}
+
+div.footer-section{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  height: 300px;
+
+}
+
+.footer-rights{
+  display: none;
+}
+
 }
